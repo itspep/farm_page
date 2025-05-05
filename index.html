@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bushira Farm Produce</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #FF8F00;
+      color: white;
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px; /* Increased logo size */
+      margin-right: 15px;
+      width: 50px;
+    }
+
+    .logo-container span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      width: 100%;
+      margin-top: 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      transition: background-image 1s ease-in-out;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      padding: 0 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+      }
+      .overlay-text {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-container">
+      <img src="./images/logo.png" height="50px" width="50px" alt="Bushira Logo">
+      <span>Bushira Farm</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Our Farm</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="slides" id="heroSlide"></div>
+    <div class="overlay-text" id="slideText">Naturally Sweet Bushira Apples</div>
+  </div>
+
+  <!-- JavaScript for Image & Text Slide -->
+  <script>
+    const images = [
+      './images/apples.jpg',
+      './images/banana.jpg',
+      './images/mangos.jpg',
+      './images/berries.jpg'
+    ];
+
+    const texts = [
+      "Naturally Sweet Bushira Apples",
+      "Sun-Kissed Bananas Grown with Care",
+      "Tropical Mangoes Bursting with Flavor",
+      "Handpicked Berries — Fresh & Juicy"
+    ];
+
+    let current = 0;
+    const slide = document.getElementById("heroSlide");
+    const text = document.getElementById("slideText");
+
+    function updateSlide() {
+      slide.style.backgroundImage = `url('${images[current]}')`;
+      text.textContent = texts[current];
+      current = (current + 1) % images.length;
+    }
+
+    // Initialize
+    updateSlide();
+    setInterval(updateSlide, 5000);
+  </script>
+
+</body>
+</html>
