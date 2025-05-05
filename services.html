@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - Bushira Farm Produce</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #FF8F00;
+      color: white;
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      margin-right: 15px;
+      width: 50px;
+    }
+
+    .logo-container span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Services Section */
+    .services-section {
+      max-width: 1200px;
+      margin: 100px auto 40px auto;
+      padding: 1rem;
+    }
+
+    .services-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #2e7d32;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #388E3C;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-container">
+      <img src="./images/logo.png" alt="Bushira Logo">
+      <span>Bushira Farm</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="farm.html">Our Farm</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Fresh Farm Produce</h3>
+        <p>Enjoy a wide range of organically grown farm products including cassava, ginger, pepper, pineapple, and more — all cultivated with love and care for your health and satisfaction.</p>
+      </div>
+      <div class="service-card">
+        <h3>Agricultural Training & Career Support</h3>
+        <p>We offer hands-on agricultural training programs and mentorship for young individuals seeking sustainable careers in farming and agribusiness.</p>
+      </div>
+      <div class="service-card">
+        <h3>Farming Consultation & Expert Advice</h3>
+        <p>Need help starting or improving your farm? Our experts provide personalized consultation to guide you from soil preparation to harvest.</p>
+      </div>
+      <div class="service-card">
+        <h3>Backyard Gardening</h3>
+        <p>Transform your home space into a productive mini-garden. We help you plan, plant, and maintain your own backyard food source.</p>
+      </div>
+      <div class="service-card">
+        <h3>Kits & Workshops</h3>
+        <p>Join our interactive workshops or purchase starter kits to begin your farming journey. Perfect for beginners, students, and enthusiasts!</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
