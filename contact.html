@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - Bushira Bustan Produce</title>
+
   <style>
     .footer {
-  background-color: #FF8F00;;
-  color: white;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: auto;
-  position: relative;
-  z-index: 999;
-}
+      background-color: #FF8F00;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: auto;
+      position: relative;
+      z-index: 999;
+    }
 
-.footer-content p {
-  margin: 0.3rem 0;
-  font-size: 1rem;
-}
+    .footer-content p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -31,7 +33,6 @@
       color: #333;
     }
 
-    /* Navbar */
     nav {
       background-color: #FF8F00;
       color: white;
@@ -79,7 +80,6 @@
       color: #c8e6c9;
     }
 
-    /* Contact Section */
     .contact-container {
       max-width: 800px;
       margin: 100px auto 40px;
@@ -119,13 +119,19 @@
     .social-links a {
       display: inline-block;
       margin: 0 10px;
-      font-size: 1.2rem;
-      color: #fff;
-      background: #388E3C;
+      font-size: 1rem;
+      color: white;
+      background: lightblue;
       padding: 10px 15px;
       border-radius: 5px;
       text-decoration: none;
       transition: background 0.3s;
+    }
+
+    .social-links a img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
 
     .social-links a:hover {
@@ -176,39 +182,38 @@
     }
 
     .menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: white;
-}
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: white;
+    }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
 
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    display: none;
-  }
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+      }
 
-  nav ul.show {
-    display: flex;
-  }
+      nav ul.show {
+        display: flex;
+      }
 
-  nav ul li {
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
+      nav ul li {
+        width: 100%;
+        padding: 0.5rem 1rem;
+      }
 
-  nav ul li a {
-    display: block;
-    width: 100%;
-  }
-}
-
+      nav ul li a {
+        display: block;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -228,7 +233,6 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  
 
   <!-- Contact Section -->
   <section class="contact-container">
@@ -236,14 +240,20 @@
     <p class="contact-info">
       📍 Eastern Region, Ghana <br>
       ✉️ <a href="mailto:busharabustan@gmail.com">busharabustan@gmail.com</a> <br>
-      📞 <a href="tel:+233266495546">0266495546</a>
+      📞 <a href="tel:+233266495546">0248953937</a>
     </p>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://www.facebook.com/people/Bushara-Bustan/61568498578830/?rdid=XC6uFPEJVAsuJS3n&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DqeMdYCgy%2F" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/in/bushira-abass-733395267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
-    </div>
+<div class="social-links icon-only">
+  <a href="https://www.facebook.com/people/Bushara-Bustan/61568498578830/" target="_blank" title="Facebook">
+    <img src="./images/facebook-round-color-icon.svg" alt="Facebook" />
+  </a>
+  <a href="https://www.linkedin.com/in/bushira-abass-733395267/" target="_blank" title="LinkedIn">
+    <img src="./images/linkedin-app-icon.svg" alt="LinkedIn" />
+  </a>
+  <a href="https://wa.me/233248953937?text=Hello%20Bushira%20Bustan" target="_blank" title="WhatsApp">
+    <img src="./images/whatsapp-color-icon.svg" alt="WhatsApp" />
+  </a>
+</div>
 
     <!-- Contact Form -->
     <div class="contact-form">
@@ -261,25 +271,23 @@
         <button type="submit">Send Message</button>
       </form>
     </div>
-
   </section>
 
   <!-- Footer -->
-<footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Bushira Bustan Produce. All rights reserved.</p>
-    <p>Crafted with care in the heart of the farm.</p>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Bushira Bustan Produce. All rights reserved.</p>
+      <p>Crafted with care in the heart of the farm.</p>
+    </div>
+  </footer>
 
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
-
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
