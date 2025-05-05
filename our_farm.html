@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Farm - Bushira Farm Produce</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100%;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #FF8F00;
+      color: white;
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      width: 50px;
+      margin-right: 15px;
+    }
+
+    .logo-container span {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #c8e6c9;
+    }
+
+    /* Our Farm Section */
+    .farm-container {
+      max-width: 1200px;
+      margin: 120px auto 40px;
+      padding: 1rem;
+    }
+
+    .farm-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #388E3C;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .contact {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+      }
+
+      .farm-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-container">
+      <img src="./images/logo.png" alt="Bushira Logo">
+      <span>Bushira Farm</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="our-farm.html">Our Farm</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Our Farm Section -->
+  <section class="farm-container">
+    <div class="farm-title">Our Farm Produce</div>
+    <div class="cards">
+
+      <!-- Fruit Card 1 -->
+      <div class="card">
+        <img src="./images/apples.jpg" alt="Apples">
+        <div class="card-content">
+          <h3>Sweet Bushira Apples</h3>
+          <p>Crisp, juicy, and grown naturally without harmful chemicals. Ideal for fresh eating and baking.</p>
+          <div class="contact">Call: +233 24 123 4567</div>
+        </div>
+      </div>
+
+      <!-- Fruit Card 2 -->
+      <div class="card">
+        <img src="./images/banana.jpg" alt="Bananas">
+        <div class="card-content">
+          <h3>Sun-Kissed Bananas</h3>
+          <p>Rich in flavor and packed with energy. Perfect for smoothies, snacks, or dessert toppings.</p>
+          <div class="contact">Call: +233 20 765 4321</div>
+        </div>
+      </div>
+
+      <!-- Fruit Card 3 -->
+      <div class="card">
+        <img src="./images/mangos.jpg" alt="Mangoes">
+        <div class="card-content">
+          <h3>Organic Mangoes</h3>
+          <p>Our mangoes are tropical treasures — sweet, aromatic, and handpicked at peak ripeness.</p>
+          <div class="contact">Call: +233 55 987 6543</div>
+        </div>
+      </div>
+
+      <!-- Fruit Card 4 -->
+      <div class="card">
+        <img src="./images/berries.jpg" alt="Berries">
+        <div class="card-content">
+          <h3>Wild Berries</h3>
+          <p>Small but mighty — rich in antioxidants and flavor. Great for salads, jams, or snacking.</p>
+          <div class="contact">Call: +233 27 111 2222</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/cassava.jpg" alt="Cassava">
+        <div class="card-content">
+          <h3>Fresh Cassava Roots</h3>
+          <p>High-quality cassava harvested at peak maturity — rich in starch, perfect for fufu and gari.</p>
+          <div class="contact">Call: +233 26 888 4455</div>
+        </div>
+      </div>
+
+      <!-- Fruit Card 6 -->
+<div class="card">
+    <img src="./images/ginger.jpg" alt="Ginger">
+    <div class="card-content">
+      <h3>Organic Ginger</h3>
+      <p>Pungent, flavorful, and medicinal — grown organically for your teas, cooking, and remedies.</p>
+      <div class="contact">Call: +233 20 654 3210</div>
+    </div>
+  </div>
+
+  <!-- Fruit Card 7 -->
+<div class="card">
+    <img src="./images/pepper.jpg" alt="Pepper">
+    <div class="card-content">
+      <h3>Hot Red Pepper</h3>
+      <p>Locally grown chili pepper that adds bold spice and flavor to your meals. Available fresh or dried.</p>
+      <div class="contact">Call: +233 24 112 3344</div>
+    </div>
+    </div>
+  </section>
+
+</body>
+</html>
