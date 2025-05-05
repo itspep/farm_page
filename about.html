@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Bushira Farm Produce</title>
+  <title>About - Bushara Bustan</title>
 
   <style>
     .footer {
-  background-color: #FF8F00;
-  color: white;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  margin-top: auto;
-  position: relative;
-  z-index: 999;
-}
+      background-color: #FF8F00;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: auto;
+      position: relative;
+      z-index: 999;
+    }
 
-.footer-content p {
-  margin: 0.3rem 0;
-  font-size: 1rem;
-}
+    .footer-content p {
+      margin: 0.3rem 0;
+      font-size: 1rem;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -31,9 +32,8 @@
       height: 100%;
     }
 
-    /* Navbar */
     nav {
-      background-color: #FF8F00;;
+      background-color: #FF8F00;
       color: white;
       padding: 0.8rem 2rem;
       display: flex;
@@ -80,10 +80,9 @@
       color: #c8e6c9;
     }
 
-    /* About Section */
     .about-section {
       max-width: 1200px;
-      margin: 120px auto 80px; /* space for fixed navbar */
+      margin: 120px auto 80px;
       padding: 2rem;
       display: flex;
       flex-wrap: wrap;
@@ -95,15 +94,18 @@
     }
 
     .founder-image {
-      flex: 1 1 300px;
-    }
+  flex: 1 1 300px;
+  max-width: 100%;
+  height: auto;
+}
 
-    .founder-image img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
+.founder-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
 
     .founder-details {
       flex: 2 1 500px;
@@ -139,39 +141,38 @@
     }
 
     .menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: white;
-}
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: white;
+    }
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
 
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    display: none;
-  }
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+      }
 
-  nav ul.show {
-    display: flex;
-  }
+      nav ul.show {
+        display: flex;
+      }
 
-  nav ul li {
-    width: 100%;
-    padding: 0.5rem 1rem;
-  }
+      nav ul li {
+        width: 100%;
+        padding: 0.5rem 1rem;
+      }
 
-  nav ul li a {
-    display: block;
-    width: 100%;
-  }
-}
-
+      nav ul li a {
+        display: block;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -179,7 +180,7 @@
   <!-- Navbar -->
   <nav>
     <div class="logo-container">
-      <img src="./images/logo.png" alt="Bushira Logo">
+      <img src="./images/logo.png" alt="Bushara Logo">
       <span>Bushara Bustan</span>
     </div>
     <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -191,7 +192,6 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  
 
   <!-- About Section -->
   <section class="about-section">
@@ -199,32 +199,49 @@
       <img src="./images/bushira.jpg" alt="Founder of Bushira Farm">
     </div>
     <div class="founder-details">
-      <h2>Meet Our Founder</h2>
-      <p><strong>Young. Passionate. Rooted in Agriculture!</strong></p>
-      <p>Bushira Farm Produce was founded by a determined and visionary young woman who set out to make a lasting impact in one of Ghana’s most essential sectors — agriculture. With a deep belief that food is a fundamental human need, she was inspired to be part of the movement that feeds the nation and sustains life.</p>
+      <h2>INTRODUCTION</h2>
+      <p>
+        Bushara Bustan is an inspiring agricultural enterprise founded in 2020 by a determined young
+        woman who turned the challenge of unemployment into an opportunity for innovation. Starting
+        with pineapple cultivation and later expanding into cassava, she transformed a small farm into
+        a growing agribusiness.
+      </p>
+      <p>
+        More than just a farm, Bushara Bustan is a catalyst for youth empowerment and agricultural
+        transformation. The initiative now seeks to diversify into additional crops, scale production,
+        and train aspiring young agripreneurs to meet the rising food demand while fueling economic
+        growth and sustainability in the sector.
+      </p>
 
-      <p>Her journey began in 2019, funded entirely through her National Service savings. With just one crop — pineapple — she began her first cultivation. That spark quickly grew into something more as she expanded to include cassava, ginger, and pepper. Today, she continues to expand her crop range and scale her operations.</p>
+      <h2>MISSION</h2>
+      <p>
+        We produce diverse foods sustainably, promote quality, empower the youth, foster connection
+        and create an agricultural reliable future.
+      </p>
 
-      <p>Born and raised in the Upper East Region of Ghana, she attended Tuffour Red Sox International School and completed in 2010. She later enrolled at Tamale Senior High School, graduating in 2013. She went on to earn a diploma in French at the Ghana Institute of Languages in 2015, followed by a Higher National Diploma in Bilingual Secretaryship, and later, a BSc and MPhil in Environmental Sciences.</p>
+      <h2>VISION</h2>
+      <p>
+        To create a sustainable agricultural ecosystem where empowered youth drive innovation and
+        growth in the agricultural sector, leading to food security and economic prosperity of the youth.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
-<footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Bushira Bustan Produce. All rights reserved.</p>
-    <p>Crafted with care in the heart of the farm.</p>
-  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Bushara Bustan Produce. All rights reserved.</p>
+      <p>Crafted with care in the heart of the farm.</p>
+    </div>
+  </footer>
 
   <script>
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
-  
     toggle.addEventListener("click", () => {
       navLinks.classList.toggle("show");
     });
   </script>
-  
-</footer>
+
 </body>
 </html>
